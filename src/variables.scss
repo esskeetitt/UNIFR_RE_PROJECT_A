@@ -1,0 +1,22 @@
+/* variables.scss */
+
+/* --- Couleurs --- */
+$primary-color: #D4F7A5;      /* Couleur principale */
+$primary-dark: #7e9461;       /* Couleur sombre pour hover */
+$error-color: red;            /* Couleur de l'erreur */
+$background-color: #f4f4f9;   /* Fond général */
+$text-color: #47525E;            /* Couleur du texte */
+$border-color: #ddd;          /* Couleur de la bordure */
+
+/* --- Tailles de police --- */
+$font-size-base: 16px;         /* Taille de la police de base */
+$font-size-small: 14px;        /* Taille de la police petite */
+
+/* --- Espacement (padding, margin) --- */
+$padding-base: 10px;           /* Espacement de base */
+$padding-large: 30px;          /* Espacement large */
+$margin-bottom: 20px;          /* Marge en bas */
+
+/* --- Bordures --- */
+$border-radius: 5px;           /* Rayon de la bordure */
+$border-radius-large: 10px;    /* Rayon de bordure large */

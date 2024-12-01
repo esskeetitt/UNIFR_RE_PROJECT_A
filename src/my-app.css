@@ -1,3 +1,84 @@
-.message {
-  background-color: lightblue;
+/* my-app.scss */
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+}
+
+/* Container to hold the navbar, logo, and content */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #D4F7A5;
+  padding: 15px;
+  width: 100%; /* Full width navbar */
+  box-sizing: border-box; /* To ensure padding is included in the width */
+}
+
+.navbar a {
+  color: #47525E;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+
+  transition: color 0.7s ease-in-out; 
+}
+
+.navbar a:hover {
+  color: #a8b0b8;
+  text-decoration: none;
+}
+
+/* Logo styling */
+.logo-container {
+  margin-top: 20px; /* Add space between navbar and logo */
+  margin-bottom: 20px; /* Space between logo and content */
+}
+
+.logo {
+  max-width: 140px; /* Control the size of the logo */
+  height: auto;
+}
+
+/* Content area */
+au-viewport {
+  flex-grow: 1;
+  width: 100%;
+  padding: 20px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    padding: 10px;
+    width: 100%; /* Make navbar links stack vertically */
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 150px; /* Slightly smaller logo on mobile */
+  }
 }
