@@ -1,0 +1,78 @@
+/* signup-page.scss / login-page.scss */
+
+/* Import des variables globales */
+@import '../../variables.scss';
+
+.signup-container, .login-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: $padding-large;
+  background-color: $primary-color;
+  border-radius: $border-radius-large;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    text-align: center;
+    color: $text-color;
+    padding-bottom: 10px;
+  }
+
+  .input-group { 
+    margin-bottom: $margin-bottom;
+
+    label {
+      font-size: $font-size-small;
+      color: $text-color;
+    }
+
+    input {
+      width: 100%;
+      padding: $padding-base;
+      font-size: $font-size-base;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: $padding-base;
+    background-color: $text-color;
+    color: white;
+    font-size: $font-size-base;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $primary-dark;
+    }
+  }
+
+  .error-message {
+    margin-top: $margin-bottom;
+    color: $error-color;
+    font-size: $font-size-small;
+    text-align: center;
+  }
+
+
+  .redirect-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: $text-color;
+
+    .redirect-link {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: bold;
+      margin-left: 5px;
+
+      &:hover {
+        color: $primary-dark;
+      }
+    }
+  }
+}

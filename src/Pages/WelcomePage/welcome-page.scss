@@ -1,0 +1,67 @@
+/* Import global variables and styles */
+@import '../../variables.scss';
+
+/* Container for the welcome page */
+.welcome-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: white;
+  border-radius: $border-radius-large;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title and description styling */
+h1 {
+  font-size: 36px;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: $text-color;
+  margin-bottom: 30px;
+}
+
+/* Button container */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Spacing between buttons */
+}
+
+/* Button styling */
+.action-button {
+  background-color: $primary-color; /* Light green background */
+  color: #333;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 19%; /* Make buttons take up most of the width */
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #b4e1a0; /* Darker green on hover */
+  }
+
+  &:focus {
+    outline: none; /* Remove the outline when focused */
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .button-container {
+    width: 100%;
+  }
+
+  .action-button {
+    width: 90%; /* Make the buttons a bit smaller on small screens */
+  }
+}

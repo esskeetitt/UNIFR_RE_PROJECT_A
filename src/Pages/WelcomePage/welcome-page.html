@@ -1,0 +1,16 @@
+<template>
+  <link rel="stylesheet" href="./welcome-page.scss"> <!-- Import SCSS for this page -->
+
+  <div class="welcome-container">
+    <h1>Welcome to UNI Modernia</h1>
+    <p>Choose between those:</p>
+
+    <!-- Buttons for different actions -->
+    <div class="button-container">
+      <button href="/grades" class="action-button" click.trigger="viewGrades()">View Grades</button>
+      <button href="/courses" class="action-button" click.trigger="viewCourses()">View Courses</button>
+      <button href="/schedule" class="action-button" click.trigger="viewSchedule()">View Schedule</button>
+      <button href="/bills" class="action-button" click.trigger="viewBills()">View Bills</button>
+    </div>
+  </div>
+</template>
