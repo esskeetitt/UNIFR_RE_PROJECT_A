@@ -1,5 +1,61 @@
-<template>
-    <h1>${content}</h1>
-    <p>Your schedule details will go here.</p>
-  </template>
-  
+<div class="calendar-container">
+  <div class="calendar">
+    <div class="calendar__picture">
+      <h2>18, Sunday</h2>
+      <h3>November</h3>
+    </div>
+    <div class="calendar__date">
+      <div class="calendar__day">M</div>
+      <div class="calendar__day">T</div>
+      <div class="calendar__day">W</div>
+      <div class="calendar__day">T</div>
+      <div class="calendar__day">F</div>
+      <div class="calendar__day">S</div>
+      <div class="calendar__day">S</div>
+      <div class="calendar__number" data-day="1">1</div>
+      <div class="calendar__number" data-day="2">2</div>
+      <div class="calendar__number" data-day="3">3</div>
+      <div class="calendar__number" data-day="4">4</div>
+      <div class="calendar__number" data-day="5">5</div>
+      <div class="calendar__number" data-day="6">6</div>
+      <div class="calendar__number" data-day="7">7</div>
+      <div class="calendar__number" data-day="8">8</div>
+      <div class="calendar__number" data-day="9">9</div>
+      <div class="calendar__number" data-day="10">10</div>
+      <div class="calendar__number" data-day="11">11</div>
+      <div class="calendar__number" data-day="12">12</div>
+      <div class="calendar__number" data-day="13">13</div>
+      <div class="calendar__number" data-day="14">14</div>
+      <div class="calendar__number" data-day="15">15</div>
+      <div class="calendar__number" data-day="16">16</div>
+      <div class="calendar__number" data-day="17">17</div>
+      <div class="calendar__number calendar__number--current" data-day="18">18</div>
+      <div class="calendar__number" data-day="19">19</div>
+      <div class="calendar__number" data-day="20">20</div>
+      <div class="calendar__number" data-day="21">21</div>
+      <div class="calendar__number" data-day="22">22</div>
+      <div class="calendar__number" data-day="23">23</div>
+      <div class="calendar__number" data-day="24">24</div>
+      <div class="calendar__number" data-day="25">25</div>
+      <div class="calendar__number" data-day="26">26</div>
+      <div class="calendar__number" data-day="27">27</div>
+      <div class="calendar__number" data-day="28">28</div>
+      <div class="calendar__number" data-day="29">29</div>
+      <div class="calendar__number" data-day="30">30</div>
+    </div>
+  </div>
+
+  <!-- Sidebar with course details -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar__header">
+      <h3>Course Details</h3>
+      <button id="closeSidebar" class="close-btn">X</button>
+    </div>
+    <div class="sidebar__content">
+      <h4 id="course-name">Course Name</h4>
+      <p id="course-details">Course details and schedule go here.</p>
+      <ul id="course-list">
+      </ul>
+    </div>
+  </div>
+</div>

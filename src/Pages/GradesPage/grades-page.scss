@@ -1,0 +1,53 @@
+/* Import variables to use them in the styles */
+@import '../../variables.scss';  /* Make sure the path to the variables.scss is correct */
+
+/* Grades container styling */
+.grades-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: $padding-large;
+  background-color: $primary-color; /* Use background color variable */
+  border-radius: $border-radius-large;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: $text-color; /* Use text color variable */
+  margin-bottom: $margin-bottom;
+}
+
+/* Grades table styling */
+.grades-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.grades-table th, .grades-table td {
+  padding: $padding-base;
+  text-align: left;
+  border: 1px solid $border-color; /* Use border color variable */
+}
+
+/* Header styling */
+.grades-table th {
+  background-color: $primary-color; /* Use primary color */
+  color: $text-color-special;
+}
+
+/* Row styling for even rows */
+.grades-table tr:nth-child(even) {
+  background-color: $primary-dark;
+}
+
+/* Styling for grade cells */
+.grades-table td.grade {
+  font-weight: bold;
+  color: $text-color; /* Use dark primary color for grade text */
+}
+
+
+/* Center align for ECTS column and other cells */
+.grades-table td, .grades-table th {
+  text-align: center; /* Center all table cells */
+}

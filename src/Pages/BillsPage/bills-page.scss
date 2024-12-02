@@ -1,0 +1,80 @@
+/* Import variables to use them in the styles */
+@import '../../variables.scss';  /* Make sure the path to variables.scss is correct */
+
+/* Bills container styling */
+.bills-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: $padding-large;
+  background-color: $primary-color; /* Use background color variable */
+  border-radius: $border-radius-large;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: $text-color; /* Use text color variable */
+  margin-bottom: $margin-bottom;
+}
+
+/* Bills table styling */
+.bills-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bills-table th, .bills-table td {
+  padding: $padding-base;
+  text-align: left;
+  border: 1px solid $border-color; /* Use border color variable */
+}
+
+/* Header styling */
+.bills-table th {
+  background-color: $primary-color; /* Use primary color */
+  color: $text-color-special;
+}
+
+/* Row styling for even rows */
+.bills-table tr:nth-child(even) {
+  background-color: $primary-dark;
+}
+
+/* Styling for status cells (Payment status) */
+.bills-table td.status {
+  text-align: center;
+}
+
+.bills-table td.status .check-icon {
+  color: #4CAF50;  /* Green for paid */
+}
+
+.bills-table td.status .clock-icon {
+  color: #FFC107;  /* Yellow for pending */
+}
+
+.bills-table td.status .warning-icon {
+  color: #F44336;  /* Red for overdue */
+}
+
+.bills-table td.status:hover {
+  cursor: pointer;
+}
+
+/* Styling for course and other cells */
+.bills-table td {
+  font-weight: normal;
+  color: $text-color; /* Use text color variable */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .bills-table th, .bills-table td {
+    padding: 10px;
+    font-size: $font-size-small;
+  }
+
+  .bills-table td {
+    font-size: $font-size-small;
+  }
+}
