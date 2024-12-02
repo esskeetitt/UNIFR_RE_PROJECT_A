@@ -1,5 +1,53 @@
 <template>
-    <h1>${content}</h1>
-    <p>Billing information will go here.</p>
-  </template>
+  <link rel="stylesheet" href="./bills-page.scss"> <!-- Import SCSS for styling -->
   
+  <div class="bills-container">
+    <h2>Outstanding Bills</h2>
+    <table class="bills-table">
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Name</th>
+          <th>Description</th>
+          <th>Pay By</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SES.1</td>
+          <td>Droit I</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
+          <td>20.11.2024</td>
+          <td>20 CHF</td>
+          <td class="status paid"><i class="check-icon">✔</i></td>
+        </tr>
+        <tr>
+          <td>SES.2</td>
+          <td>Droit II</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
+          <td>28.11.2024</td>
+          <td>20 CHF</td>
+          <td class="status pending"><i class="clock-icon">⌛</i></td>
+        </tr>
+        <tr>
+          <td>SES.3</td>
+          <td>Comptabilité I</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
+          <td>30.11.2024</td>
+          <td>20 CHF</td>
+          <td class="status overdue"><i class="warning-icon">⚠</i></td>
+        </tr>
+        <tr>
+          <td>SES.4</td>
+          <td>Comptabilité II</td>
+          <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</td>
+          <td>05.12.2024</td>
+          <td>20 CHF</td>
+          <td class="status paid"><i class="check-icon">✔</i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

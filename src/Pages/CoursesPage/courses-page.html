@@ -1,5 +1,93 @@
 <template>
-    <h1>${content}</h1>
-    <p>Course List will go here.</p>
-  </template>
+  <link rel="stylesheet" href="./courses-page.scss"> <!-- Import SCSS for styling -->
   
+  <div class="courses-container">
+    <h2>Courses Overview</h2>
+    <table class="courses-table">
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Name</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>ECTS</th>
+          <th>-</th> <!-- New Details Column -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SES.1</td>
+          <td>Droit I</td>
+          <td>20.12.2023</td>
+          <td>05.05.2024</td>
+          <td>6</td>
+          <td><a href="/details/SES1">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.2</td>
+          <td>Droit II</td>
+          <td>12.12.2023</td>
+          <td>05.06.2024</td>
+          <td>6</td>
+          <td><a href="/details/SES2">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.3</td>
+          <td>Comptabilité I</td>
+          <td>20.04.2023</td>
+          <td>20.09.2023</td>
+          <td>6</td>
+          <td><a href="/details/SES3">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.4</td>
+          <td>Comptabilité II</td>
+          <td>20.02.2023</td>
+          <td>20.06.2023</td>
+          <td>6</td>
+          <td><a href="/details/SES4">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.5</td>
+          <td>Marketing II</td>
+          <td>10.12.2023</td>
+          <td>22.03.2024</td>
+          <td>6</td>
+          <td><a href="/details/SES5">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.6</td>
+          <td>Marketing II</td>
+          <td>11.12.2023</td>
+          <td>22.03.2024</td>
+          <td>6</td>
+          <td><a href="/details/SES6">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.7</td>
+          <td>Organisation I</td>
+          <td>12.05.2023</td>
+          <td>22.06.2023</td>
+          <td>4</td>
+          <td><a href="/details/SES7">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.8</td>
+          <td>Organisation II</td>
+          <td>20.12.2023</td>
+          <td>22.03.2024</td>
+          <td>4</td>
+          <td><a href="/details/SES8">Details</a></td> <!-- Details link -->
+        </tr>
+        <tr>
+          <td>SES.9</td>
+          <td>Operation Management</td>
+          <td>20.01.2023</td>
+          <td>22.03.2024</td>
+          <td>5</td>
+          <td><a href="/details/SES9">Details</a></td> <!-- Details link -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>
