@@ -2,7 +2,18 @@
 
 This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
-## Start dev web server
+
+## Github available at : 
+
+    https://github.com/esskeetitt/UNIFR_RE_PROJECT_A
+
+(The commits are recent because we had a problem with git accounts and we had to rewrite it then)
+
+## Make sure to be in the right folder
+
+    cd reis-project
+
+## Start dev web server (HERE)
 
     npm start
 

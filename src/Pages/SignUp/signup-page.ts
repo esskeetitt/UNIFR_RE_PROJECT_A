@@ -5,13 +5,13 @@ export class SignupPage {
     confirmPassword: string = '';
     signupError: string = '';
   
-    // Function to handle signup action (this will be implemented later)
+    // Function to handle signup action
     signup() {
       if (this.password !== this.confirmPassword) {
         this.signupError = 'Passwords do not match!';
         return;
       }
-      // Call your signup logic here (e.g., API request)
+      // Call the signup logic here (e.g., API request)
       console.log('Sign Up Successful!');
       // Clear the fields after successful sign up
       this.username = '';

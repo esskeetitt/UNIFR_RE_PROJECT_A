@@ -2,8 +2,6 @@ export class SchedulePage {
     public content = 'Here is your schedule!';
   }
 
-
-    // Mock course data for demonstration
 // Mock course data for demonstration
 const courses = {
   "1": [
